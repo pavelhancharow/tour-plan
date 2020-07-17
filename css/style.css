@@ -669,6 +669,25 @@ template {
   .logo {
     width: 99px;
   }
+  .hotel-info__rating {
+    display: none;
+  }
+  .hotel-stars {
+    -ms-flex-preferred-size: auto;
+        flex-basis: auto;
+    margin-left: auto;
+  }
+  .hotel-name {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .hotel-offer {
+    margin-left: 0;
+    margin-bottom: 10px;
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
 }
 
 @media (max-width: 425px) {
