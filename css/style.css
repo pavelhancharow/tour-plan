@@ -607,6 +607,7 @@ template {
 
 .slider {
   width: 728px;
+  height: 450px;
 }
 
 .slider-button {
@@ -639,7 +640,7 @@ template {
 
 .swiper-container {
   width: 100%;
-  height: 450px;
+  height: 100%;
   position: relative;
   border-radius: 8px;
 }
@@ -654,6 +655,11 @@ template {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 122, 223, 0.48)), to(rgba(255, 255, 255, 0.128)));
   background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%);
   z-index: 10;
+}
+
+.swiper-slide__img {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .geo {
@@ -671,7 +677,7 @@ template {
 
 .booking {
   width: 350px;
-  min-height: 210px;
+  height: 210px;
   padding: 28px;
   font-family: "Nunito", sans-serif;
   color: #ffffff;
@@ -795,11 +801,18 @@ template {
 
 .map {
   width: 350px;
+  height: 213px;
 }
 
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
+  }
+  .slider {
+    width: 590px;
+  }
+  .swiper-slide__img {
+    height: 100%;
   }
 }
 
@@ -827,6 +840,32 @@ template {
   }
   .search__input {
     width: 340px;
+  }
+  .hotel-grid {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .slider {
+    width: inherit;
+    margin-bottom: 30px;
+  }
+  .swiper-slide__img {
+    width: 100%;
+  }
+  .geo {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .booking,
+  .map {
+    width: 340px;
+  }
+  .map {
+    height: 210px;
   }
 }
 
@@ -860,6 +899,20 @@ template {
     height: 1px;
     background-color: #333333;
   }
+  .slider {
+    height: 350px;
+  }
+  .geo {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    min-height: 450px;
+  }
+  .booking,
+  .map {
+    width: inherit;
+  }
 }
 
 @media (max-width: 576px) {
@@ -891,16 +944,39 @@ template {
         -ms-flex-order: -1;
             order: -1;
   }
+  .slider {
+    height: 250px;
+    margin-bottom: 20px;
+  }
+  .geo {
+    min-height: 440px;
+  }
+  .booking,
+  .map {
+    height: 210px;
+  }
 }
 
 @media (max-width: 425px) {
   .container {
     max-width: 87%;
   }
+  .slider {
+    height: 210px;
+  }
 }
 
 @media (max-width: 320px) {
   .container {
     max-width: 85%;
+  }
+  .slider {
+    height: 179px;
+  }
+  .geo {
+    min-height: 402px;
+  }
+  .map {
+    height: 172px;
   }
 }
