@@ -809,6 +809,7 @@ template {
   height: 100%;
   border-radius: 10px;
   border: none;
+  overflow: hidden;
 }
 
 @media (max-width: 1200px) {
