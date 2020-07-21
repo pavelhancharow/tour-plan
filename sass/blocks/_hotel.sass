@@ -29,6 +29,9 @@
   &-description
     font-size: 12px
     line-height: 15px
+  &-grid
+    display: flex
+    justify-content: space-between
 .rating
   max-width: 65px
   min-height: 45px
@@ -84,3 +87,81 @@
     left: 0
     background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%)
     z-index: 10
+.geo
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+.booking
+  width: 350px
+  min-height: 210px
+  padding: 28px
+  font-family: $nunito
+  color: $light
+  background-color: $dark
+  border-radius: 8px
+  &-info
+    display: flex
+    justify-content: space-between
+  &-price
+    display: flex
+    flex-direction: column
+    margin-bottom: 9px
+  &__star
+    font-weight: normal
+    font-size: 10px
+    line-height: 14px
+  &__pricetag
+    font-weight: 800
+    font-size: 24px
+    line-height: 33px
+  &__per-room
+    font-weight: normal
+    font-size: 12px
+    line-height: 16px
+  &-room
+    margin-top: 4px
+  &__text
+    display: flex
+    align-items: center
+    justify-content: space-between
+  &__text:first-child
+    margin-bottom: 8px
+  &__description
+    margin-left: 9px
+    font-weight: normal
+    font-size: 12px
+    line-height: 16px
+  &-call-center
+    display: flex
+    justify-content: space-between
+    margin-bottom: 17px
+  &__heading
+    font-weight: 600
+    font-size: 18px
+    line-height: 25px
+  &__number
+    display: flex
+    align-items: center
+    font-weight: 600
+    font-size: 18px
+    line-height: 25px
+    text-decoration: none
+    color: inherit
+  &__num
+    margin-left: 8px
+  &-button
+    width: 100%
+    min-height: 45px
+    font-family: $nunito
+    font-weight: 600
+    font-size: 14px
+    line-height: 19px
+    color: inherit
+    background-color: $primary
+    border-radius: 4px
+    border: none
+    outline: none
+    cursor: pointer
+.map
+  width: 347px
+  height: 213px
