@@ -78,11 +78,11 @@
         <div class="hotel-info__text">
           <div class="hotel-wrapper">
             <div class="hotel-stars">
-              <img src="img/svg/star.svg" alt="star" class="hotel-stars__srar">
-              <img src="img/svg/star.svg" alt="star" class="hotel-stars__srar">
-              <img src="img/svg/star.svg" alt="star" class="hotel-stars__srar">
-              <img src="img/svg/star.svg" alt="star" class="hotel-stars__srar">
-              <img src="img/svg/star.svg" alt="star" class="hotel-stars__srar">
+              <img src="img/svg/star.svg" alt="star" class="hotel-stars__star">
+              <img src="img/svg/star.svg" alt="star" class="hotel-stars__star">
+              <img src="img/svg/star.svg" alt="star" class="hotel-stars__star">
+              <img src="img/svg/star.svg" alt="star" class="hotel-stars__star">
+              <img src="img/svg/star.svg" alt="star" class="hotel-stars__star">
             </div>
             <!-- /.hotel-stars -->
             <h2 class="hotel-name">GRAND HILTON HOTEL</h2>
@@ -100,25 +100,24 @@
       </div>
       <!-- /.hotel-info -->
       <div class="hotel-grid">
-        <div class="slider">
-          <!-- Slider main container -->
-          <div class="swiper-container">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-              <!-- Slides -->
-              <div class="swiper-slide"><img src="img/hotel/hotel-1.jpg" alt="slide" class="swiper-slide__img"></div>
-              <div class="swiper-slide"><img src="img/hotel/hotel-2.jpg" alt="slide" class="swiper-slide__img"></div>
-              <div class="swiper-slide"><img src="img/hotel/hotel-3.jpg" alt="slide" class="swiper-slide__img"></div>
-              <div class="swiper-slide"><img src="img/hotel/hotel-4.jpg" alt="slide" class="swiper-slide__img"></div>
-              <div class="swiper-slide"><img src="img/hotel/hotel-5.jpg" alt="slide" class="swiper-slide__img"></div>
-            </div>
-            <!-- If we need navigation buttons -->
-            <button class="slider-button slider-button-prev"></button>
-            <button class="slider-button slider-button-next"></button>
+        <div class="swiper-container hotel-slider hotel__slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide hotel-slider__item"><img src="img/hotel/hotel-1.jpg" alt="slide"
+                class="hotel-slider__img"></div>
+            <div class="swiper-slide hotel-slider__item"><img src="img/hotel/hotel-2.jpg" alt="slide"
+                class="hotel-slider__img"></div>
+            <div class="swiper-slide hotel-slider__item"><img src="img/hotel/hotel-3.jpg" alt="slide"
+                class="hotel-slider__img"></div>
+            <div class="swiper-slide hotel-slider__item"><img src="img/hotel/hotel-4.jpg" alt="slide"
+                class="hotel-slider__img hotel-slider__item"></div>
+            <div class="swiper-slide hotel-slider__item"><img src="img/hotel/hotel-5.jpg" alt="slide"
+                class="hotel-slider__img hotel-slider__item"></div>
           </div>
-          <!-- /.swiper-container -->
+          <!-- /.swiper-wrapper -->
+          <button class="hotel-slider__button hotel-slider__button-prev"></button>
+          <button class="hotel-slider__button hotel-slider__button-next"></button>
         </div>
-        <!-- /.slider -->
+        <!-- /.hotel-slider -->
         <div class="geo">
           <div class="booking">
             <div class="booking-info">
@@ -181,6 +180,159 @@
     <!-- /.newsletter-wrapper -->
   </section>
   <!-- /.newsletter -->
+  <section class="reviews">
+    <div class="container">
+      <h2 class="reviews__title">What people thinks about us</h2>
+      <div class="swiper-container reviews-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="reviews-slider__item">
+              <div class="reviews-slider__profile">
+                <img src="img/reviews/avatar-1.jpeg" alt="Photo: Megan Fox" class="reviews-slider__avatar">
+                <h3 class="reviews-slider__username">Megan Fox</h3>
+                <span class="reviews-slider__date">Stayed 18 Nov, 2019</span>
+                <div class="reviews-slider__rating">
+                  <img src="img/svg/star.svg" alt="star">
+                  <img src="img/svg/star.svg" alt="star">
+                  <img src="img/svg/star.svg" alt="star">
+                  <img src="img/svg/star.svg" alt="star">
+                  <img src="img/svg/star.svg" alt="star">
+                </div>
+                <!-- /.reviews-slider__rating -->
+              </div>
+              <!-- /.reviews-slider__profile -->
+              <p class="reviews-slider__text">
+                It was very nice hotel with cleanliness. Staff behavior was good and polite. They welcome us very well.
+                Issue was only that Lift was not in working and we were allotted to 3rd floor and amenities articles
+                were in corner of gallery which were giving bad feeling. Breakfast was good and support of the staff was
+                also very nice. Location is not good as per atmosphere, it is very nearby most of the popular places but
+                self location in a narrow street is not good. Overall it was a good experience and could recommend.
+              </p>
+              <!-- /.reviews-slider__text -->
+            </div>
+            <!-- /.reviews-slider__item -->
+          </div>
+          <!-- /.swiper-slide -->
+          <div class="swiper-slide">
+            <div class="reviews-slider__item">
+              <div class="reviews-slider__profile">
+                <img src="img/reviews/avatar-2.jpeg" alt="Photo: Kate Lockley" class="reviews-slider__avatar">
+                <h3 class="reviews-slider__username">Kate Lockley</h3>
+                <span class="reviews-slider__date">Stayed 12 Sep, 2019</span>
+                <div class="reviews-slider__rating">
+                  <img src="img/svg/star.svg" alt="star">
+                  <img src="img/svg/star.svg" alt="star">
+                  <img src="img/svg/star.svg" alt="star">
+                  <img src="img/svg/star.svg" alt="star">
+                </div>
+                <!-- /.reviews-slider__rating -->
+              </div>
+              <!-- /.reviews-slider__profile -->
+              <p class="reviews-slider__text">
+                The stay was phenomenal. You can tell that this place is new, but everything went well during my stay.
+                Te stay was not planned but when I saw this on booking.com, I figured I'd give it a try and was really
+                glad that i did. I
+                will definitely come back now. It was nice and quet, away from the busy street.
+                Staff was really friendly and was always available as we walked around the hotel and the beach.
+                I loved the loungers by the pool, perfect for some drinks and where we had our dinner.
+              </p>
+              <!-- /.reviews-slider__text -->
+            </div>
+            <!-- /.reviews-slider__item -->
+          </div>
+          <!-- /.swiper-slide -->
+          <div class="swiper-slide">
+            <div class="reviews-slider__item">
+              <div class="reviews-slider__profile">
+                <img src="img/reviews/avatar-3.jpeg" alt="Photo: Akina Kawauchi" class="reviews-slider__avatar">
+                <h3 class="reviews-slider__username">Akina Kawauchi</h3>
+                <span class="reviews-slider__date">Stayed 28 Jun, 2019</span>
+                <div class="reviews-slider__rating">
+                  <img src="img/svg/star.svg" alt="star">
+                  <img src="img/svg/star.svg" alt="star">
+                  <img src="img/svg/star.svg" alt="star">
+                  <img src="img/svg/star.svg" alt="star">
+                  <img src="img/svg/star.svg" alt="star">
+                </div>
+                <!-- /.reviews-slider__rating -->
+              </div>
+              <!-- /.reviews-slider__profile -->
+              <p class="reviews-slider__text">
+                A really lovely location right on the beach. Great for watching surfing and partaking.
+                Can watch the surf from your bed, if in the beach front units
+                Lovely pool and great staff.
+                Recently renovated entrance reception looking fabulous.
+              </p>
+              <!-- /.reviews-slider__text -->
+            </div>
+            <!-- /.reviews-slider__item -->
+          </div>
+          <!-- /.swiper-slide -->
+          <div class="swiper-slide">
+            <div class="reviews-slider__item">
+              <div class="reviews-slider__profile">
+                <img src="img/reviews/avatar-4.jpeg" alt="Photo: Joe Bronze" class="reviews-slider__avatar">
+                <h3 class="reviews-slider__username">Joe Bronze</h3>
+                <span class="reviews-slider__date">Stayed 03 Feb, 2019</span>
+                <div class="reviews-slider__rating">
+                  <img src="img/svg/star.svg" alt="star">
+                  <img src="img/svg/star.svg" alt="star">
+                  <img src="img/svg/star.svg" alt="star">
+                  <img src="img/svg/star.svg" alt="star">
+                  <img src="img/svg/star.svg" alt="star">
+                </div>
+                <!-- /.reviews-slider__rating -->
+              </div>
+              <!-- /.reviews-slider__profile -->
+              <p class="reviews-slider__text">
+                Great hotel!! Spacious and comfortable room. Very clean and modern! You only hear the waves of the ocean
+                at night. Can it be more perfect! The pool is good. The restaurant is of high level and without any
+                doubt the best in town! And for the same price. I’ll definitely come back here!! Staff also very kind
+                and accurate! Everyone speaks perfect English.
+              </p>
+              <!-- /.reviews-slider__text -->
+            </div>
+            <!-- /.reviews-slider__item -->
+          </div>
+          <!-- /.swiper-slide -->
+          <div class="swiper-slide">
+            <div class="reviews-slider__item">
+              <div class="reviews-slider__profile">
+                <img src="img/reviews/avatar-5.jpeg" alt="Photo: Maggie Lichter" class="reviews-slider__avatar">
+                <h3 class="reviews-slider__username">Maggie Lichter</h3>
+                <span class="reviews-slider__date">Stayed 15 Dec, 2018</span>
+                <div class="reviews-slider__rating">
+                  <img src="img/svg/star.svg" alt="star">
+                  <img src="img/svg/star.svg" alt="star">
+                  <img src="img/svg/star.svg" alt="star">
+                  <img src="img/svg/star.svg" alt="star">
+                  <img src="img/svg/star.svg" alt="star">
+                </div>
+                <!-- /.reviews-slider__rating -->
+              </div>
+              <!-- /.reviews-slider__profile -->
+              <p class="reviews-slider__text">
+                Based on my previous stay at this hotel, I decided to extend my stay, and I can only repeat, if not
+                emphasize all the more how wonderful and uniquely amazing the staff and service are in particular. My
+                previous review thus remains unchanged: Exceptionally great, professional and friendly service from
+                beginning to end, exceptionally great housekeeping, room maintenance, and room service, well equipped
+                room and hotel, nothing at all to point out as negative. Thank you!
+              </p>
+              <!-- /.reviews-slider__text -->
+            </div>
+            <!-- /.reviews-slider__item -->
+          </div>
+          <!-- /.swiper-slide -->
+        </div>
+        <!-- /.swiper-wrapper -->
+        <button class="reviews-slider__button reviews-slider__button-prev"></button>
+        <button class="reviews-slider__button reviews-slider__button-next"></button>
+      </div>
+      <!-- /.reviews-slider -->
+    </div>
+    <!-- /.container -->
+  </section>
+  <!-- /.reviews -->
   <script src="https://api-maps.yandex.ru/2.1/?apikey=4684cb28-6e8b-4853-a4e8-67455c0384bb&lang=ru_RU"></script>
   <script src="js/swiper-bundle.min.js"></script>
   <script src="js/main.js"></script>
