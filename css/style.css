@@ -437,9 +437,63 @@ template {
   padding-left: 23px;
   font-size: 12px;
   line-height: 15px;
+  text-overflow: ellipsis;
   color: #333333;
   background-color: #F5FAFE;
   border: none;
+  outline: none;
+}
+
+.search__input::-webkit-input-placeholder {
+  color: #333333;
+  opacity: 1;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+
+.search__input:-ms-input-placeholder {
+  color: #333333;
+  opacity: 1;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+
+.search__input::-ms-input-placeholder {
+  color: #333333;
+  opacity: 1;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+
+.search__input::placeholder {
+  color: #333333;
+  opacity: 1;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+
+.search__input:focus::-webkit-input-placeholder {
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+
+.search__input:focus:-ms-input-placeholder {
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+
+.search__input:focus::-ms-input-placeholder {
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+
+.search__input:focus::placeholder {
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
 }
 
 .search__button {
@@ -451,6 +505,7 @@ template {
   border: none;
   background-color: #EC1F46;
   cursor: pointer;
+  outline: none;
 }
 
 .search__icon {
@@ -812,6 +867,152 @@ template {
   overflow: hidden;
 }
 
+.newsletter {
+  position: relative;
+  padding-top: 98px;
+  padding-bottom: 87px;
+  background-image: url(../img/newsletter-bg.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.newsletter::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(10, 34, 61, 0.8);
+}
+
+.newsletter-wrapper {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+  width: 731px;
+}
+
+.newsletter-title {
+  color: #ffffff;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.newsletter-title__strong {
+  display: block;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 45px;
+  text-transform: uppercase;
+}
+
+.subscribe {
+  position: relative;
+  width: 350px;
+  height: 55px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.subscribe__input {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding-left: 33px;
+  padding-right: 75px;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 18px;
+  text-overflow: ellipsis;
+  outline: none;
+  border: none;
+  color: #0A223D;
+}
+
+.subscribe__input::-webkit-input-placeholder {
+  color: #BDBDBD;
+  text-indent: 0px;
+  -webkit-transition: text-indent 0.3s ease;
+  transition: text-indent 0.3s ease;
+}
+
+.subscribe__input:-ms-input-placeholder {
+  color: #BDBDBD;
+  text-indent: 0px;
+  -webkit-transition: text-indent 0.3s ease;
+  transition: text-indent 0.3s ease;
+}
+
+.subscribe__input::-ms-input-placeholder {
+  color: #BDBDBD;
+  text-indent: 0px;
+  -webkit-transition: text-indent 0.3s ease;
+  transition: text-indent 0.3s ease;
+}
+
+.subscribe__input::placeholder {
+  color: #BDBDBD;
+  text-indent: 0px;
+  -webkit-transition: text-indent 0.3s ease;
+  transition: text-indent 0.3s ease;
+}
+
+.subscribe__input:focus::-webkit-input-placeholder {
+  text-indent: 500px;
+  -webkit-transition: text-indent 0.3s ease;
+  transition: text-indent 0.3s ease;
+}
+
+.subscribe__input:focus:-ms-input-placeholder {
+  text-indent: 500px;
+  -webkit-transition: text-indent 0.3s ease;
+  transition: text-indent 0.3s ease;
+}
+
+.subscribe__input:focus::-ms-input-placeholder {
+  text-indent: 500px;
+  -webkit-transition: text-indent 0.3s ease;
+  transition: text-indent 0.3s ease;
+}
+
+.subscribe__input:focus::placeholder {
+  text-indent: 500px;
+  -webkit-transition: text-indent 0.3s ease;
+  transition: text-indent 0.3s ease;
+}
+
+.subscribe__button {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  min-width: 65px;
+  height: 100%;
+  padding: 0 5px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  color: #ffffff;
+  background-color: #EC1F46;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
@@ -875,11 +1076,19 @@ template {
   .map {
     height: 210px;
   }
+  .newsletter {
+    padding-top: 92px;
+    padding-bottom: 92px;
+  }
+  .newsletter-wrapper {
+    max-width: 700px;
+  }
 }
 
 @media (max-width: 768px) {
   .container {
-    max-width: 540px;
+    max-width: 576px;
+    width: 95%;
   }
   .navbar__search, .navbar__user, .navbar-bottom {
     display: none;
@@ -907,6 +1116,9 @@ template {
     height: 1px;
     background-color: #333333;
   }
+  .hotel {
+    padding-bottom: 60px;
+  }
   .slider {
     height: 350px;
   }
@@ -921,6 +1133,20 @@ template {
   .map {
     width: inherit;
   }
+  .newsletter-wrapper {
+    max-width: 576px;
+    width: 95%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .newsletter-title {
+    margin-bottom: 37px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -932,6 +1158,10 @@ template {
   }
   .logo {
     width: 99px;
+  }
+  .hotel {
+    padding-top: 5px;
+    padding-bottom: 40px;
   }
   .hotel-info__rating {
     display: none;
@@ -963,6 +1193,13 @@ template {
   .map {
     height: 210px;
   }
+  .newsletter {
+    padding-top: 76px;
+    padding-bottom: 83px;
+  }
+  .newsletter-wrapper {
+    max-width: 90%;
+  }
 }
 
 @media (max-width: 425px) {
@@ -971,6 +1208,20 @@ template {
   }
   .slider {
     height: 210px;
+  }
+  .newsletter-wrapper {
+    max-width: 87%;
+  }
+  .newsletter-title {
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .newsletter__strong {
+    font-size: 30px;
+    line-height: 38px;
+  }
+  .subscribe {
+    width: 100%;
   }
 }
 
@@ -986,5 +1237,8 @@ template {
   }
   .map {
     height: 172px;
+  }
+  .newsletter-wrapper {
+    max-width: 85%;
   }
 }

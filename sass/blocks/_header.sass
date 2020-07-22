@@ -40,9 +40,18 @@
     padding-left: 23px
     font-size: 12px
     line-height: 15px
+    text-overflow: ellipsis
     color: $text-color
     background-color: $secondary
     border: none
+    outline: none
+    &::placeholder
+      color: $text-color
+      opacity: 1
+      transition: opacity 0.3s ease
+    &:focus::placeholder
+      opacity: 0
+      transition: opacity 0.3s ease
   &__button
     width: 65px
     height: 100%
@@ -52,6 +61,7 @@
     border: none
     background-color: $primary
     cursor: pointer
+    outline: none
   &__icon
     width: 16px
 .user
