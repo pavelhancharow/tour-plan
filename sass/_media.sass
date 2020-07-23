@@ -6,6 +6,9 @@
       width: 590px
       &__img
         height: 100%
+  .card
+    width: 230px
+    height: 230px
 @media (max-width: 992px)
   .container
     max-width: 700px
@@ -49,6 +52,14 @@
     &-slider
       &__item
         max-width: 580px
+  .activities
+    padding-bottom: 50px
+    &-wrapper
+      flex-wrap: wrap
+  .card
+    width: 340px
+    height: 255px
+    margin-bottom: 20px
 @media (max-width: 768px)
   .container
     max-width: 576px
@@ -104,6 +115,8 @@
           right: 50%
           transform: translateX(50%)
           margin-right: -65px
+  .card
+    width: 48%
 @media (max-width: 576px)
   .container
     max-width: 90%
@@ -149,6 +162,17 @@
     &__title
       font-size: 24px
       line-height: 28px
+  .activities
+    padding-top: 40px
+    padding-bottom: 40px
+    &__title
+      margin-bottom: 36px
+  .card
+    width: 100%
+    &:nth-child(2)
+      order: 1
+    &:last-child
+      order: 2
 @media (max-width: 425px)
   .container
     max-width: 87%
