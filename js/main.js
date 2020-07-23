@@ -62,3 +62,6 @@ function init() {
       iconColor: '#EC1F46'
     }))
 }
+
+// parallax.js
+$('.newsletter').parallax({ imageSrc: 'img/newsletter-bg.jpeg' });
