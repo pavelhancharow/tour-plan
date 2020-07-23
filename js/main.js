@@ -64,4 +64,4 @@ function init() {
 }
 
 // parallax.js
-$('.newsletter').parallax({ imageSrc: 'img/newsletter-bg.jpeg', iosFix: false, androidFix: false });
+$('.newsletter').parallax({ imageSrc: 'img/newsletter-bg.jpeg', iosFix: true, androidFix: true });
