@@ -87,6 +87,11 @@
     padding-bottom: 60px
     &-wrapper
       grid-template-columns: repeat(auto-fit, 340px)
+  .trip-card
+    &__about
+      margin-bottom: 31px
+    &__room
+      margin-bottom: 37px
 @media (max-width: 768px)
   .container
     max-width: 576px
@@ -150,11 +155,17 @@
       font-size: 30px
       line-height: 38px
     &-wrapper
-      grid-template-columns: repeat(auto-fit, 280px)
-      column-gap: 16px
-      row-gap: 16px
+      grid-template-columns: repeat(auto-fit, 48%)
+      column-gap: 4%
+      row-gap: 20px
   .trip-card
     &__about
+      margin-bottom: 34px
+      font-size: 12px
+    &__room
+      margin-bottom: 37px
+    &__button
+      padding: 10px 21px
       font-size: 12px
 @media (max-width: 576px)
   .container
@@ -239,9 +250,11 @@
       border-radius: 0 0 8px 8px
     &__title
       margin-bottom: 23px
-    &__button
-      padding: 10px 21px
-      font-size: 12px
+    &__about
+      margin-bottom: 24px
+    &__room
+      margin-bottom: 19px
+
 @media (max-width: 425px)
   .container
     max-width: 87%

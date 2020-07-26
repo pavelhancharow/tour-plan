@@ -1562,6 +1562,12 @@ template {
     -ms-grid-columns: (340px)[auto-fit];
         grid-template-columns: repeat(auto-fit, 340px);
   }
+  .trip-card__about {
+    margin-bottom: 31px;
+  }
+  .trip-card__room {
+    margin-bottom: 37px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1658,13 +1664,21 @@ template {
     line-height: 38px;
   }
   .packages-wrapper {
-    -ms-grid-columns: (280px)[auto-fit];
-        grid-template-columns: repeat(auto-fit, 280px);
-    -webkit-column-gap: 16px;
-            column-gap: 16px;
-    row-gap: 16px;
+    -ms-grid-columns: (48%)[auto-fit];
+        grid-template-columns: repeat(auto-fit, 48%);
+    -webkit-column-gap: 4%;
+            column-gap: 4%;
+    row-gap: 20px;
   }
   .trip-card__about {
+    margin-bottom: 34px;
+    font-size: 12px;
+  }
+  .trip-card__room {
+    margin-bottom: 37px;
+  }
+  .trip-card__button {
+    padding: 10px 21px;
     font-size: 12px;
   }
 }
@@ -1789,9 +1803,11 @@ template {
   .trip-card__title {
     margin-bottom: 23px;
   }
-  .trip-card__button {
-    padding: 10px 21px;
-    font-size: 12px;
+  .trip-card__about {
+    margin-bottom: 24px;
+  }
+  .trip-card__room {
+    margin-bottom: 19px;
   }
 }
 
