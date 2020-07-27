@@ -42,6 +42,8 @@
     line-height: 160%
     color: $grey
     text-decoration: none
+  &__legal
+    justify-self: end
   &__contact
     &-details
       grid-column: span 2
@@ -59,7 +61,8 @@
     &-mb2
       display: flex
       align-items: flex-start
-      margin-bottom: 20px
+      &:not(:last-child)
+        margin-bottom: 20px
     &-wrapper
       min-width: 40px
   &__form

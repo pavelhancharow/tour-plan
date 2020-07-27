@@ -32,6 +32,14 @@
       margin-bottom: 24px
     &__room
       margin-bottom: 19px
+  .footer
+    &-wrapper
+      grid-template-columns: 220px 210px 1fr 210px
+    &__input
+      flex-basis: 100%
+    &__payment
+      &-ul
+        margin-left: 60px
 @media (max-width: 992px)
   .container
     max-width: 700px
@@ -92,6 +100,39 @@
       margin-bottom: 31px
     &__room
       margin-bottom: 37px
+  .footer
+    padding-top: 73px
+    padding-bottom: 33px
+    &-wrapper
+      grid-template-columns: 230px 280px 190px
+      grid-gap: 0
+      grid-row-gap: 50px
+    &-logo
+      grid-row: 1 / 2
+      width: 104px
+    &__social
+      &-network
+        grid-row: 1 / 2
+        grid-column: span 4
+        align-self: center
+    &__categories
+      grid-row: 2 / 3
+    &__aditional
+      grid-row: 1fr
+    &__contact
+      &-details
+        grid-row: 3
+        grid-column: span 2
+      &-form
+        grid-row: 4
+        grid-column: span 2
+    &__input
+      flex-basis: 48%
+    &__payment
+      grid-column: 1 / 4
+      grid-row: 5 / 6
+      &-ul
+        margin-left: 0
 @media (max-width: 768px)
   .container
     max-width: 576px
@@ -167,6 +208,17 @@
     &__button
       padding: 10px 21px
       font-size: 12px
+  .footer
+    &-wrapper
+      grid-template-columns: 27% 2fr 195px
+    &__title
+      font-size: 15px
+      &-inline
+        margin-right: 33px
+    &__aditional
+      justify-self: end
+    &__input
+      min-width: 172px
 @media (max-width: 576px)
   .container
     max-width: 90%
@@ -254,7 +306,60 @@
       margin-bottom: 24px
     &__room
       margin-bottom: 19px
-
+  .footer
+    padding-top: 69px
+    padding-bottom: 21px
+    &-wrapper
+      grid-template-columns: 1fr
+      row-gap: 30px
+    &-logo
+      grid-row: 1
+      grid-column: 1
+    &__social
+      &-network
+        grid-row: 2
+        grid-column: 1
+        justify-self: start
+        display: flex
+        flex-wrap: wrap
+    &__title
+      &-inline
+        margin-right: 0
+        margin-bottom: 20px
+        flex-basis: 100%
+    &__legal
+      grid-row: 3
+      grid-column: 1
+      justify-self: start
+    &__aditional
+      grid-row: 4
+      grid-column: 1
+      justify-self: start
+    &__categories
+      grid-row: 5
+      grid-column: 1
+    &__contact
+      &-details
+        grid-row: 6
+        grid-column: 1
+      &-form
+        grid-row: 7
+        grid-column: 1
+    &__input
+      flex-basis: 100%
+    &__payment
+      grid-row: 8
+      grid-column: 1
+    &__title
+      font-size: 18px
+    &__item
+      &-wrapper
+        min-width: 31px
+    &__payment
+      flex-wrap: wrap
+      &-ul
+        flex-basis: 100%
+        margin-bottom: 10px
 @media (max-width: 425px)
   .container
     max-width: 87%
@@ -281,6 +386,13 @@
     &__title
       font-size: 18px
       line-height: 23px
+  .footer
+    &__button
+      order: 1
+    &__form
+      &-info
+        flex-basis: 100%
+        margin-bottom: 15px
 @media (max-width: 320px)
   .container
     max-width: 85%
