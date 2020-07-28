@@ -1862,8 +1862,8 @@ template {
     padding-bottom: 33px;
   }
   .footer-wrapper {
-    -ms-grid-columns: 200px 280px 220px;
-        grid-template-columns: 200px 280px 220px;
+    -ms-grid-columns: 186px 293px 221px;
+        grid-template-columns: 186px 293px 221px;
     grid-gap: 0;
     grid-row-gap: 50px;
   }
