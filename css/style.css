@@ -1862,8 +1862,8 @@ template {
     padding-bottom: 33px;
   }
   .footer-wrapper {
-    -ms-grid-columns: 230px 280px 190px;
-        grid-template-columns: 230px 280px 190px;
+    -ms-grid-columns: 200px 280px 220px;
+        grid-template-columns: 200px 280px 220px;
     grid-gap: 0;
     grid-row-gap: 50px;
   }
@@ -1890,6 +1890,8 @@ template {
   .footer__aditional {
     -ms-grid-row: 1;
     grid-row: 1fr;
+    -ms-grid-column-align: center;
+        justify-self: center;
   }
   .footer__contact-details {
     -ms-grid-row: 3;
@@ -2040,8 +2042,8 @@ template {
     margin-right: 33px;
   }
   .footer__aditional {
-    -ms-grid-column-align: end;
-        justify-self: end;
+    -ms-grid-column-align: center;
+        justify-self: center;
   }
   .footer__input {
     min-width: 172px;
