@@ -390,11 +390,11 @@ template {
 }
 
 .navbar-bottom {
+  padding: 31px 0;
   background-color: #0A223D;
 }
 
 .navbar-menu {
-  padding: 31px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -414,6 +414,10 @@ template {
   color: inherit;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+.navbar-menu__item_mobile_visible {
+  display: none;
 }
 
 .logo {
@@ -1781,8 +1785,10 @@ template {
   .navbar__search {
     margin-left: auto;
   }
-  .navbar-menu {
+  .navbar-bottom {
     padding: 22px 0;
+  }
+  .navbar-menu {
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
@@ -1925,8 +1931,68 @@ template {
     max-width: 576px;
     width: 95%;
   }
-  .navbar__search, .navbar__user, .navbar-bottom {
+  body {
+    padding-top: 78px;
+  }
+  .navbar-mobile_fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+  }
+  .navbar__search_mobile_hidden, .navbar__user_mobile_hidden {
     display: none;
+  }
+  .navbar__search_mobile_visible, .navbar__user_mobile_visible {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .navbar__user {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .navbar-bottom {
+    display: none;
+    position: fixed;
+    top: 78px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding-top: 31px;
+    padding-bottom: 68px;
+  }
+  .navbar-bottom_active {
+    display: block;
+  }
+  .navbar-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .navbar-menu__item:not(:last-of-type) {
+    margin-bottom: 20px;
+  }
+  .navbar-menu__item:first-of-type {
+    margin-bottom: 27px;
+  }
+  .navbar-menu__item:nth-of-type(2) {
+    margin-bottom: 39px;
+  }
+  .navbar-menu__item_mobile_visible {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   .navbar-btn {
     display: -webkit-box;
@@ -1950,6 +2016,14 @@ template {
     width: 16px;
     height: 1px;
     background-color: #333333;
+  }
+  .search__input {
+    width: 245px;
+  }
+  .user__name_light {
+    margin-top: 10px;
+    margin-left: 0;
+    color: #ffffff;
   }
   .hotel {
     padding-bottom: 60px;
@@ -2056,6 +2130,9 @@ template {
   }
   .navbar-top {
     padding: 28px 0;
+  }
+  .navbar-bottom {
+    top: 74px;
   }
   .logo {
     width: 99px;
