@@ -2016,6 +2016,20 @@ template {
     width: 16px;
     height: 1px;
     background-color: #333333;
+    -webkit-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+  }
+  .navbar-btn__line_active:nth-of-type(1) {
+    -webkit-transform: rotate(45deg) translateY(3px) translateX(4px);
+            transform: rotate(45deg) translateY(3px) translateX(4px);
+  }
+  .navbar-btn__line_active:nth-of-type(2) {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  .navbar-btn__line_active:nth-of-type(3) {
+    -webkit-transform: rotate(-45deg) translateY(-3px) translateX(4px);
+            transform: rotate(-45deg) translateY(-3px) translateX(4px);
   }
   .search__input {
     width: 245px;

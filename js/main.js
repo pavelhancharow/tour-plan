@@ -68,6 +68,11 @@ $('.newsletter').parallax({ imageSrc: 'img/newsletter-bg.jpeg', iosFix: true, an
 
 // burger
 var menuButtom = document.querySelector('.navbar-btn');
+
 menuButtom.addEventListener('click', function () {
   document.querySelector('.navbar-bottom').classList.toggle('navbar-bottom_active');
+  var lines = document.querySelectorAll('.navbar-btn__line');
+  for (var i = 0; i <= lines.length; i++) {
+    lines[i].classList.toggle('navbar-btn__line_active');
+  }
 });
