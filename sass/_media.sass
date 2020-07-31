@@ -135,6 +135,11 @@
       grid-row: 5 / 6
       &-ul
         margin-left: 0
+  .modal
+    &__dialog
+      padding: 33px 68px
+    &__textarea
+      min-width: 278px
 @media (max-width: 768px)
   .container
     max-width: 576px
@@ -421,6 +426,9 @@
       &-ul
         flex-basis: 100%
         margin-bottom: 10px
+  .modal
+    &__dialog
+      padding: 33px 46px
 @media (max-width: 425px)
   .container
     max-width: 87%
@@ -454,6 +462,19 @@
       &-info
         flex-basis: 100%
         margin-bottom: 15px
+  .modal
+    &__dialog
+      padding: 33px 36px
+    &__button
+      order: 1
+    &__form
+      &-info
+        flex-basis: 100%
+        margin-bottom: 15px
+@media (max-width: 375px)
+  .modal
+    &__dialog
+      padding: 33px 16px
 @media (max-width: 320px)
   .container
     max-width: 85%
@@ -467,3 +488,6 @@
   .newsletter
     &-wrapper
       max-width: 85%
+  .modal
+    &__textarea
+      min-width: 240px

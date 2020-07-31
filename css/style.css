@@ -20,6 +20,90 @@ img {
   max-width: 100%;
 }
 
+.input {
+  height: 50px;
+  padding: 0 23px;
+  font-size: 12px;
+  line-height: 15px;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+}
+
+.input::-webkit-input-placeholder {
+  font-size: 12px;
+  line-height: 15px;
+  color: #BDBDBD;
+}
+
+.input:-ms-input-placeholder {
+  font-size: 12px;
+  line-height: 15px;
+  color: #BDBDBD;
+}
+
+.input::-ms-input-placeholder {
+  font-size: 12px;
+  line-height: 15px;
+  color: #BDBDBD;
+}
+
+.input::placeholder {
+  font-size: 12px;
+  line-height: 15px;
+  color: #BDBDBD;
+}
+
+.textarea {
+  height: 123px;
+  padding: 18px 23px;
+  font-size: 12px;
+  line-height: 15px;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  resize: none;
+}
+
+.textarea::-webkit-input-placeholder {
+  font-size: 12px;
+  line-height: 15px;
+  color: #BDBDBD;
+}
+
+.textarea:-ms-input-placeholder {
+  font-size: 12px;
+  line-height: 15px;
+  color: #BDBDBD;
+}
+
+.textarea::-ms-input-placeholder {
+  font-size: 12px;
+  line-height: 15px;
+  color: #BDBDBD;
+}
+
+.textarea::placeholder {
+  font-size: 12px;
+  line-height: 15px;
+  color: #BDBDBD;
+}
+
+.button {
+  min-width: 160px;
+  min-height: 50px;
+  padding: 18px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  background-color: #EC1F46;
+  color: #ffffff;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -1503,6 +1587,7 @@ template {
   font-weight: 700;
   font-size: 18px;
   line-height: 23px;
+  color: #ffffff;
   text-transform: uppercase;
 }
 
@@ -1592,91 +1677,13 @@ template {
 .footer__input {
   -ms-flex-preferred-size: 48%;
       flex-basis: 48%;
-  height: 50px;
-  padding: 0 23px;
   margin-bottom: 15px;
-  font-size: 12px;
-  line-height: 15px;
-  border-radius: 4px;
-  border: none;
-  outline: none;
-}
-
-.footer__input::-webkit-input-placeholder {
-  font-size: 12px;
-  line-height: 15px;
-  color: #BDBDBD;
-}
-
-.footer__input:-ms-input-placeholder {
-  font-size: 12px;
-  line-height: 15px;
-  color: #BDBDBD;
-}
-
-.footer__input::-ms-input-placeholder {
-  font-size: 12px;
-  line-height: 15px;
-  color: #BDBDBD;
-}
-
-.footer__input::placeholder {
-  font-size: 12px;
-  line-height: 15px;
-  color: #BDBDBD;
 }
 
 .footer__textarea {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
-  height: 123px;
-  padding: 18px 23px;
   margin-bottom: 22px;
-  font-size: 12px;
-  line-height: 15px;
-  border-radius: 4px;
-  border: none;
-  outline: none;
-  resize: none;
-}
-
-.footer__textarea::-webkit-input-placeholder {
-  font-size: 12px;
-  line-height: 15px;
-  color: #BDBDBD;
-}
-
-.footer__textarea:-ms-input-placeholder {
-  font-size: 12px;
-  line-height: 15px;
-  color: #BDBDBD;
-}
-
-.footer__textarea::-ms-input-placeholder {
-  font-size: 12px;
-  line-height: 15px;
-  color: #BDBDBD;
-}
-
-.footer__textarea::placeholder {
-  font-size: 12px;
-  line-height: 15px;
-  color: #BDBDBD;
-}
-
-.footer__button {
-  min-width: 160px;
-  min-height: 50px;
-  padding: 18px;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 15px;
-  background-color: #EC1F46;
-  color: #ffffff;
-  border-radius: 4px;
-  border: none;
-  outline: none;
-  cursor: pointer;
 }
 
 .footer__payment {
@@ -1714,6 +1721,99 @@ template {
   width: 283px;
   margin-left: 116px;
   justify-self: stretch;
+}
+
+.modal {
+  color: #ffffff;
+}
+
+.modal__overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 143, 223, 0.39);
+  z-index: 100;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+
+.modal__overlay__visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal__dialog {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  max-width: 478px;
+  padding: 33px 88px;
+  background-color: #0A223D;
+  border-radius: 8px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 101;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+
+.modal__dialog__visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal__close {
+  position: absolute;
+  top: 17px;
+  right: 18px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal__title {
+  margin-bottom: 15px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.modal__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.modal__form-info {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  color: #E0E0E0;
+}
+
+.modal__input {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.modal__textarea {
+  width: 100%;
+  margin-bottom: 15px;
 }
 
 @media (max-width: 1200px) {
@@ -1923,6 +2023,12 @@ template {
   }
   .footer__payment-ul {
     margin-left: 0;
+  }
+  .modal__dialog {
+    padding: 33px 68px;
+  }
+  .modal__textarea {
+    min-width: 278px;
   }
 }
 
@@ -2359,6 +2465,9 @@ template {
         flex-basis: 100%;
     margin-bottom: 10px;
   }
+  .modal__dialog {
+    padding: 33px 46px;
+  }
 }
 
 @media (max-width: 425px) {
@@ -2402,6 +2511,25 @@ template {
         flex-basis: 100%;
     margin-bottom: 15px;
   }
+  .modal__dialog {
+    padding: 33px 36px;
+  }
+  .modal__button {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .modal__form-info {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 375px) {
+  .modal__dialog {
+    padding: 33px 16px;
+  }
 }
 
 @media (max-width: 320px) {
@@ -2419,5 +2547,8 @@ template {
   }
   .newsletter-wrapper {
     max-width: 85%;
+  }
+  .modal__textarea {
+    min-width: 240px;
   }
 }
