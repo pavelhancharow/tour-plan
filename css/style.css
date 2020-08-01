@@ -1761,8 +1761,6 @@ template {
   opacity: 0;
   -webkit-transition: opacity 0.3s;
   transition: opacity 0.3s;
-  height: 100vh;
-  overflow: auto;
 }
 
 .modal__dialog__visible {
@@ -2553,5 +2551,12 @@ template {
   }
   .modal__textarea {
     min-width: 240px;
+  }
+}
+
+@media (max-height: 487px) {
+  .modal__dialog {
+    height: 100vh;
+    overflow-y: auto;
   }
 }
