@@ -104,4 +104,9 @@ $(document).ready(function () {
       $(".modal__dialog").removeClass("modal__dialog__visible");
     }
   });
+
+  $(function () {
+    //2. Получить элемент, к которому необходимо добавить маску
+    $('[name=phone]').mask("+ 9 (999) 999-99-99");
+  });
 });
