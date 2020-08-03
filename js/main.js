@@ -105,8 +105,51 @@ $(document).ready(function () {
     }
   });
 
+  //обработка формы
+
   $(function () {
     //2. Получить элемент, к которому необходимо добавить маску
-    $('[name=phone]').mask("+ 9 (999) 999-99-99");
+    $('[name=phone]').mask("+ 7 (999) 999-99-99");
+  });
+
+  $(".form").each(function () {
+    $(this).validate({
+      element: "form",
+      validClass: "input_required",
+      errorClass: "invalid",
+      rules: {
+        name: {
+          required: true,
+          minlength: 2
+        },
+        email: {
+          required: true,
+          email: true
+        }
+      },
+      messages: {
+        name: {
+          required: "* Enter your full name",
+          minlength: "* The name must be at least 2 letters long"
+        },
+        email: {
+          required: "* We need your email address to contact you",
+          email: "* Your email address must be in the format of name@domain.com"
+        },
+        phone: {
+          required: "* Phone number is required"
+        }
+      },
+      highlight: function (element, errorClass, validClass) {
+        $(element).addClass(errorClass).removeClass(validClass);
+        $(element.form).find("input[for=" + element.type + "]")
+          .addClass(errorClass);
+      },
+      unhighlight: function (element, errorClass, validClass) {
+        $(element).removeClass(errorClass).addClass(validClass);
+        $(element.form).find("input[for=" + element.type + "]")
+          .removeClass(errorClass);
+      }
+    });
   });
 });

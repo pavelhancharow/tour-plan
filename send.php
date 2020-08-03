@@ -4,7 +4,7 @@ require 'phpmailer/PHPMailer.php';
 require 'phpmailer/SMTP.php';
 require 'phpmailer/Exception.php';
 
-if (isset($_POST['email'])) {
+if (isset($_POST['subscribe'])) {
   // Переменные, которые отправляет пользователь
   $email = $_POST['email'];
 
@@ -51,7 +51,7 @@ if (isset($_POST['email'])) {
 
   // Отображение результата
   header('Location: subscription.html');
-} else if (isset($_POST['message'])) {
+} else if (isset($_POST['appeal'])) {
   // Переменные, которые отправляет пользователь
   $name = $_POST['name'];
   $message = $_POST['message'];
@@ -101,11 +101,11 @@ if (isset($_POST['email'])) {
   }
       // Отображение результата
   header('Location: thank.html');
-} else if (isset($_POST['user'])) {
+} else if (isset($_POST['modal'])) {
   // Переменные, которые отправляет пользователь
-  $name = $_POST['user'];
+  $name = $_POST['name'];
   $phone = $_POST['phone'];
-  $email = $_POST['mail'];
+  $email = $_POST['email'];
   $message = $_POST['text'];
 
     // Формирование самого письма

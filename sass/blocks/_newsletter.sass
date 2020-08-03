@@ -34,13 +34,7 @@
   position: relative
   width: 350px
   height: 55px
-  border-radius: 4px
-  overflow: hidden
   &__input
-    content: ""
-    position: absolute
-    top: 0
-    left: 0
     width: 100%
     height: 100%
     padding-left: 33px
@@ -52,6 +46,7 @@
     outline: none
     border: none
     color: $dark
+    border-radius: 4px
     &::placeholder
       color: $grey
       text-indent: 0px
@@ -59,6 +54,9 @@
     &:focus::placeholder
       text-indent: 500px
       transition: text-indent 0.3s ease
+    &-group
+      width: 350px
+      height: 55px
   &__button
     content: ""
     position: absolute
@@ -75,3 +73,5 @@
     border: none
     outline: none
     cursor: pointer
+    border-top-right-radius: 4px
+    border-bottom-right-radius: 4px

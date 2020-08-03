@@ -16,7 +16,7 @@
   <header class="navbar navbar-mobile_fixed">
     <div class="container">
       <div class="navbar-top">
-        <a href="https://pavelhancharou.ru/homeworks/lesson-28/" class="logo">
+        <a href="https://pavelhancharou.ru/homeworks/lesson-29/" class="logo">
           <img src="img/svg/horizont-logo.svg" alt="logo: Best Tour Plan" class="logo__image">
         </a>
         <form action="#" class="search navbar__search navbar__search_mobile_hidden">
@@ -368,9 +368,12 @@
         subscribe to our
         <span class="newsletter-title__strong">Newsletter</span>
       </h2>
-      <form action="send.php" method="POST" class="subscribe newsletter__subscribe">
-        <input type="text" class="subscribe__input" placeholder="Your email address" name="email">
-        <button class="subscribe__button" value="subscribe">Send</button>
+      <form action="send.php" method="POST" class="subscribe newsletter__subscribe form">
+        <div class="subscribe__input-group">
+          <input type="email" class="subscribe__input input_required" placeholder="Your email address" name="email"
+            required>
+        </div>
+        <button class="subscribe__button" value="subscribe" name="subscribe">Send</button>
       </form>
     </div>
     <!-- /.newsletter-wrapper -->
@@ -662,12 +665,18 @@
         <!-- /.footer__contact-details -->
         <div class="footer__contact-form">
           <h3 class="footer__title footer__title-mb3">Send us a message</h3>
-          <form action="send.php" method="POST" class="footer__form">
-            <input type="text" class="input footer__input" placeholder="Your Full Name*" name="name" required>
-            <input type="text" class="input footer__input" placeholder="Phone Number*" name="phone" required>
+          <form action="send.php" method="POST" class="footer__form form">
+            <div class="footer__input-group">
+              <input type="text" class="input footer__input input_required" placeholder="Your Full Name*" name="name"
+                required>
+            </div>
+            <div class="footer__input-group">
+              <input type="tel" class="input footer__input input_required" placeholder="Phone Number*" name="phone"
+                required>
+            </div>
             <textarea class="textarea footer__textarea" cols="30" rows="10" placeholder="Message"
               name="message"></textarea>
-            <button type="submit" class="button footer__button" value="message">Send</button>
+            <button type="submit" class="button footer__button" value="message" name="appeal">Send</button>
             <span class="footer__form-info">* Required Fields</span>
           </form>
         </div>
@@ -698,12 +707,12 @@
         <img src="img/svg/close.svg" alt="icon: close">
       </a>
       <h3 class="modal__title modal__title-mb3">Booking</h3>
-      <form action="send.php" method="POST" class="modal__form">
-        <input type="text" class="input modal__input" placeholder="Your Full Name*" name="user" required>
-        <input type="text" class="input modal__input" placeholder="Phone Number*" name="phone" required>
-        <input type="text" class="input modal__input" placeholder="Email*" name="mail" required>
+      <form action="send.php" method="POST" class="modal__form form">
+        <input type="text" class="input modal__input input_required" placeholder="Your Full Name*" name="name" required>
+        <input type="tel" class="input modal__input input_required" placeholder="Phone Number*" name="phone" required>
+        <input type="email" class="input modal__input input_required" placeholder="Email*" name="email" required>
         <textarea class="textarea modal__textarea" cols="30" rows="10" placeholder="Message" name="text"></textarea>
-        <button type="submit" class="button modal__button" value="message">Send</button>
+        <button type="submit" class="button modal__button" name="modal">Send</button>
         <span class="modal__form-info">* Required Fields</span>
       </form>
       <!-- /.modal__form -->
@@ -713,6 +722,7 @@
   <!-- /.modal -->
   <script src="js/jquery-3.5.1.slim.js"></script>
   <script src="js/jquery.maskedinput.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
   <script src="https://api-maps.yandex.ru/2.1/?apikey=4684cb28-6e8b-4853-a4e8-67455c0384bb&lang=ru_RU"></script>
   <script src="js/swiper-bundle.min.js"></script>
   <script src="js/parallax.min.js"></script>

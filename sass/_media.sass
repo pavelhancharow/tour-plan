@@ -36,7 +36,8 @@
     &-wrapper
       grid-template-columns: 220px 210px 1fr 210px
     &__input
-      flex-basis: 100%
+      &-group
+        flex-basis: 100%
     &__payment
       &-ul
         margin-left: 60px
@@ -129,7 +130,8 @@
         grid-row: 4
         grid-column: span 2
     &__input
-      flex-basis: 48%
+      &-group
+        flex-basis: 48%
     &__payment
       grid-column: 1 / 4
       grid-row: 5 / 6
@@ -283,7 +285,8 @@
     &__aditional
       justify-self: center
     &__input
-      min-width: 172px
+      &-group
+        min-width: 172px
 @media (max-width: 576px)
   .container
     max-width: 90%
@@ -413,7 +416,8 @@
         grid-row: 7
         grid-column: 1
     &__input
-      flex-basis: 100%
+      &-group
+        flex-basis: 100%
     &__payment
       grid-row: 8
       grid-column: 1
@@ -452,6 +456,9 @@
       line-height: 38px
   .subscribe
     width: 100%
+    &__input
+      &-group
+        width: 100%
   .reviews
     &__title
       font-size: 18px

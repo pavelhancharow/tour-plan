@@ -16,13 +16,12 @@
   <header class="navbar navbar-mobile_fixed">
     <div class="container">
       <div class="navbar-top">
-        <a href="https://pavelhancharou.ru/homeworks/lesson-28/" class="logo">
+        <a href="https://pavelhancharou.ru/homeworks/lesson-29/" class="logo">
           <img src="img/svg/horizont-logo.svg" alt="logo: Best Tour Plan" class="logo__image">
         </a>
         <form action="#" class="search navbar__search navbar__search_mobile_hidden">
           <input type="text" class="search__input" placeholder="Search Location">
-          <button class="button search__button"><img src="img/svg/search.svg" alt="icon: search"
-              class="search__icon"></button>
+          <button class="search__button"><img src="img/svg/search.svg" alt="icon: search" class="search__icon"></button>
         </form>
         <a href="#" class="user navbar__user navbar__user_mobile_hidden">
           <img src="img/user-avatar.jpeg" alt="Avatar: Nathan" class="user__avatar">
@@ -51,7 +50,7 @@
           <li class="navbar-menu__item navbar-menu__item_mobile_visible">
             <form action="#" class="search navbar__search navbar__search_mobile_visible">
               <input type="text" class="search__input" placeholder="Search Location">
-              <button class="button search__button"><img src="img/svg/search.svg" alt="icon: search"
+              <button class="search__button"><img src="img/svg/search.svg" alt="icon: search"
                   class="search__icon"></button>
             </form>
           </li>
@@ -187,11 +186,18 @@
         <!-- /.footer__contact-details -->
         <div class="footer__contact-form">
           <h3 class="footer__title footer__title-mb3">Send us a message</h3>
-          <form action="send.php" method="POST" class="footer__form">
-            <input type="text" class="footer__input" placeholder="Your Full Name*" name="name">
-            <input type="text" class="footer__input" placeholder="Phone Number*" name="phone">
-            <textarea class="footer__textarea" cols="30" rows="10" placeholder="Message" name="message"></textarea>
-            <button type="submit" class="footer__button">Send</button>
+          <form action="send.php" method="POST" class="footer__form form">
+            <div class="footer__input-group">
+              <input type="text" class="input footer__input input_required" placeholder="Your Full Name*" name="name"
+                required>
+            </div>
+            <div class="footer__input-group">
+              <input type="tel" class="input footer__input input_required" placeholder="Phone Number*" name="phone"
+                required>
+            </div>
+            <textarea class="textarea footer__textarea" cols="30" rows="10" placeholder="Message"
+              name="message"></textarea>
+            <button type="submit" class="button footer__button" value="message" name="appeal">Send</button>
             <span class="footer__form-info">* Required Fields</span>
           </form>
         </div>

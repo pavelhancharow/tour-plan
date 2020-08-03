@@ -104,6 +104,16 @@ img {
   cursor: pointer;
 }
 
+.invalid {
+  font-size: 12px;
+  line-height: 15px;
+  color: #EC1F46;
+}
+
+input.invalid {
+  border: 1px solid #EC1F46;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -1207,15 +1217,9 @@ template {
   position: relative;
   width: 350px;
   height: 55px;
-  border-radius: 4px;
-  overflow: hidden;
 }
 
 .subscribe__input {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
   padding-left: 33px;
@@ -1227,6 +1231,7 @@ template {
   outline: none;
   border: none;
   color: #0A223D;
+  border-radius: 4px;
 }
 
 .subscribe__input::-webkit-input-placeholder {
@@ -1281,6 +1286,11 @@ template {
   transition: text-indent 0.3s ease;
 }
 
+.subscribe__input-group {
+  width: 350px;
+  height: 55px;
+}
+
 .subscribe__button {
   content: "";
   position: absolute;
@@ -1297,6 +1307,8 @@ template {
   border: none;
   outline: none;
   cursor: pointer;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
 }
 
 .reviews {
@@ -1681,6 +1693,12 @@ template {
 }
 
 .footer__input {
+  width: 100%;
+}
+
+.footer__input-group {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
   -ms-flex-preferred-size: 48%;
       flex-basis: 48%;
   margin-bottom: 15px;
@@ -1814,12 +1832,12 @@ template {
 
 .modal__input {
   width: 100%;
-  margin-bottom: 15px;
+  margin-top: 15px;
 }
 
 .modal__textarea {
   width: 100%;
-  margin-bottom: 15px;
+  margin: 15px 0;
 }
 
 @media (max-width: 1200px) {
@@ -1872,7 +1890,7 @@ template {
     -ms-grid-columns: 220px 210px 1fr 210px;
         grid-template-columns: 220px 210px 1fr 210px;
   }
-  .footer__input {
+  .footer__input-group {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
@@ -2015,7 +2033,7 @@ template {
     grid-row: 4;
     grid-column: span 2;
   }
-  .footer__input {
+  .footer__input-group {
     -ms-flex-preferred-size: 48%;
         flex-basis: 48%;
   }
@@ -2246,7 +2264,7 @@ template {
     -ms-grid-column-align: center;
         justify-self: center;
   }
-  .footer__input {
+  .footer__input-group {
     min-width: 172px;
   }
 }
@@ -2447,7 +2465,7 @@ template {
     -ms-grid-column: 1;
     grid-column: 1;
   }
-  .footer__input {
+  .footer__input-group {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
@@ -2502,6 +2520,9 @@ template {
     line-height: 38px;
   }
   .subscribe {
+    width: 100%;
+  }
+  .subscribe__input-group {
     width: 100%;
   }
   .reviews__title {
