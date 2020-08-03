@@ -125,6 +125,10 @@ $(document).ready(function () {
         email: {
           required: true,
           email: true
+        },
+        phone: {
+          required: true,
+          minlength: 11
         }
       },
       messages: {
@@ -137,18 +141,15 @@ $(document).ready(function () {
           email: "* Your email address must be in the format of name@domain.com"
         },
         phone: {
-          required: "* Phone number is required"
+          required: "* Phone number is required",
+          minlength: "* The number must be at least 11 letters long"
         }
       },
       highlight: function (element, errorClass, validClass) {
         $(element).addClass(errorClass).removeClass(validClass);
-        $(element.form).find("input[for=" + element.type + "]")
-          .addClass(errorClass);
       },
       unhighlight: function (element, errorClass, validClass) {
         $(element).removeClass(errorClass).addClass(validClass);
-        $(element.form).find("input[for=" + element.type + "]")
-          .removeClass(errorClass);
       }
     });
   });
