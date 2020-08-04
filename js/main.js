@@ -107,10 +107,9 @@ $(document).ready(function () {
 
   //обработка формы
 
-  $(function () {
-    //2. Получить элемент, к которому необходимо добавить маску
-    $('[name=phone]').mask("+ 7 (999) 999-99-99");
-  });
+  // $(function () {
+  //2. Получить элемент, к которому необходимо добавить маску
+  $('[name=phone]').mask("+7 (999) 999-99-99");
 
   $(".form").each(function () {
     $(this).validate({
@@ -128,7 +127,7 @@ $(document).ready(function () {
         },
         phone: {
           required: true,
-          minlength: 11
+          minlength: 18
         }
       },
       messages: {
@@ -142,7 +141,7 @@ $(document).ready(function () {
         },
         phone: {
           required: "* Phone number is required",
-          minlength: "* The number must be at least 11 letters long"
+          minlength: "* The number must be at least 18 letters long",
         }
       },
       highlight: function (element, errorClass, validClass) {
