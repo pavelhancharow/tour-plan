@@ -105,12 +105,10 @@ $(document).ready(function () {
     }
   });
 
-  //обработка формы
-
-  // $(function () {
-  //2. Получить элемент, к которому необходимо добавить маску
+  // плагин для ввода телефона
   $('[name=phone]').mask("+7 (999) 999-99-99");
 
+  //обработка формы validate
   $(".form").each(function () {
     $(this).validate({
       element: "form",
@@ -152,4 +150,7 @@ $(document).ready(function () {
       }
     });
   });
+
+  // анимация при scroll
+  AOS.init();
 });

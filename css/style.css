@@ -112,6 +112,10 @@ img {
 
 input.invalid {
   border: 1px solid #EC1F46;
+  -webkit-animation: headShake;
+          animation: headShake;
+  -webkit-animation-duration: 0.7s;
+          animation-duration: 0.7s;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
