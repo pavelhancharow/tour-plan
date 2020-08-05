@@ -26,43 +26,45 @@ $(document).ready(function () {
     effect: "flip",
   });
 
-  ymaps.ready(init);
 
-  function init() {
-    // Создание карты.
-    var myMap = new ymaps.Map("map", {
-      // Координаты центра карты.
-      // Порядок по умолчанию: «широта, долгота».
-      // Чтобы не определять координаты центра карты вручную,
-      // воспользуйтесь инструментом Определение координат.
-      center: [37.77229036108529, -122.4198695],
-      // Уровень масштабирования. Допустимые значения:
-      // от 0 (весь мир) до 19.
-      zoom: 14
-    }, {
-      searchControlProvider: 'yandex#search'
-    }),
-      // Создаем геообъект с типом геометрии "Точка".
-      myGeoObject = new ymaps.GeoObject({
-        // Описание геометрии.
-        geometry: {
-          type: "Point",
-        }
-      }, {
-        // Опции.
-        // Иконка метки будет растягиваться под размер ее содержимого.
-        preset: 'islands#blackStretchyIcon'
-      });
+  // ymaps.ready(init);
 
-    myMap.geoObjects
-      .add(myGeoObject)
-      .add(new ymaps.Placemark([37.77229036108529, -122.4198695], {
-        balloonContent: 'Hotel Hilton'
-      }, {
-        preset: 'islands#dotIcon',
-        iconColor: '#EC1F46'
-      }))
-  }
+
+  // function init() {
+  //   // Создание карты.
+  //   var myMap = new ymaps.Map("map", {
+  //     // Координаты центра карты.
+  //     // Порядок по умолчанию: «широта, долгота».
+  //     // Чтобы не определять координаты центра карты вручную,
+  //     // воспользуйтесь инструментом Определение координат.
+  //     center: [37.77229036108529, -122.4198695],
+  //     // Уровень масштабирования. Допустимые значения:
+  //     // от 0 (весь мир) до 19.
+  //     zoom: 14
+  //   }, {
+  //     searchControlProvider: 'yandex#search'
+  //   }),
+  //     // Создаем геообъект с типом геометрии "Точка".
+  //     myGeoObject = new ymaps.GeoObject({
+  //       // Описание геометрии.
+  //       geometry: {
+  //         type: "Point",
+  //       }
+  //     }, {
+  //       // Опции.
+  //       // Иконка метки будет растягиваться под размер ее содержимого.
+  //       preset: 'islands#blackStretchyIcon'
+  //     });
+
+  //   myMap.geoObjects
+  //     .add(myGeoObject)
+  //     .add(new ymaps.Placemark([37.77229036108529, -122.4198695], {
+  //       balloonContent: 'Hotel Hilton'
+  //     }, {
+  //       preset: 'islands#dotIcon',
+  //       iconColor: '#EC1F46'
+  //     }))
+  // }
 
   // parallax.js
   $('.newsletter').parallax({ imageSrc: 'img/newsletter-bg.jpeg', iosFix: true, androidFix: true });
@@ -153,4 +155,13 @@ $(document).ready(function () {
 
   // анимация при scroll
   AOS.init();
+
+  $(function () {
+    $(".lazy").lazyload();
+  });
+
+  $(".map").mousemove(function (event) {
+    console.log('1');
+    $(".google-map").append('<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6015.614163698136!2d-122.42176810559886!3d37.77726389552986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c6c8f4459%3A0xb10ed6d9b5050fa5!2sTwitter!5e0!3m2!1sru!2sby!4v1595331086414!5m2!1sru!2sby" width="100%" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>');
+  });
 });

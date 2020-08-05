@@ -985,6 +985,7 @@ template {
   border-radius: 10px;
   border: none;
   overflow: hidden;
+  background-image: url(../img/map.png);
 }
 
 .packages {
