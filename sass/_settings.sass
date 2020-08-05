@@ -12,6 +12,7 @@ body
 img
   max-width: 100%
 .input
+  width: 100%
   height: 50px
   padding: 0 23px
   font-size: 12px
@@ -23,6 +24,10 @@ img
     font-size: 12px
     line-height: 15px
     color: $grey
+  &-group
+    width: 100%
+    height: 50px
+    position: relative
 .textarea
   height: 123px
   padding: 18px 23px
@@ -50,6 +55,9 @@ img
   outline: none
   cursor: pointer
 .invalid
+  position: absolute
+  left: 0
+  bottom: -14px
   font-size: 12px
   line-height: 15px
   color: $primary

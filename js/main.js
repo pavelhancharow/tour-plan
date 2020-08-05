@@ -131,15 +131,15 @@ $(document).ready(function () {
       messages: {
         name: {
           required: "* Enter your full name",
-          minlength: "* The name must be at least 2 letters long"
+          minlength: "* More than 2 letters long"
         },
         email: {
-          required: "* We need your email address to contact you",
-          email: "* Your email address must be in the format of name@domain.com"
+          required: "* Enter your email address",
+          email: "* Must be name@domain.com"
         },
         phone: {
-          required: "* Phone number is required",
-          minlength: "* The number must be at least 18 letters long",
+          required: "* Enter your phone number",
+          minlength: "* More than 18 letters long",
         }
       },
       highlight: function (element, errorClass, validClass) {

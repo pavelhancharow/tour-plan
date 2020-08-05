@@ -25,6 +25,13 @@
       align-items: center
       justify-content: space-between
       min-width: 83px
+    &-link
+      display: flex
+      justify-content: center
+      &:hover
+        border-radius: 50%
+        background-color: $light
+        box-shadow: inset 1px 1px 0px 1.5px rgba(10,34,61,1)
   &__title
     margin-bottom: 16px
     font-weight: 700
@@ -69,6 +76,11 @@
         margin-bottom: 20px
     &-wrapper
       min-width: 40px
+  &__connection
+    list-style: none
+    &-link
+      color: $grey
+      text-decoration: none
   &__form
     display: flex
     align-items: center
@@ -81,8 +93,10 @@
       color: $grey5
   &__input
     width: 100%
+    position: absolute
+    top: 0
+    left: 0
     &-group
-      align-self: flex-start
       flex-basis: 48%
       margin-bottom: 15px
   &__textarea

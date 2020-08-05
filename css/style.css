@@ -21,6 +21,7 @@ img {
 }
 
 .input {
+  width: 100%;
   height: 50px;
   padding: 0 23px;
   font-size: 12px;
@@ -52,6 +53,12 @@ img {
   font-size: 12px;
   line-height: 15px;
   color: #BDBDBD;
+}
+
+.input-group {
+  width: 100%;
+  height: 50px;
+  position: relative;
 }
 
 .textarea {
@@ -105,6 +112,9 @@ img {
 }
 
 .invalid {
+  position: absolute;
+  left: 0;
+  bottom: -14px;
   font-size: 12px;
   line-height: 15px;
   color: #EC1F46;
@@ -1224,6 +1234,9 @@ template {
 }
 
 .subscribe__input {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   padding-left: 33px;
@@ -1604,6 +1617,22 @@ template {
   min-width: 83px;
 }
 
+.footer__social-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer__social-link:hover {
+  border-radius: 50%;
+  background-color: #ffffff;
+  -webkit-box-shadow: inset 1px 1px 0px 1.5px #0a223d;
+          box-shadow: inset 1px 1px 0px 1.5px #0a223d;
+}
+
 .footer__title {
   margin-bottom: 16px;
   font-weight: 700;
@@ -1681,6 +1710,15 @@ template {
   min-width: 40px;
 }
 
+.footer__connection {
+  list-style: none;
+}
+
+.footer__connection-link {
+  color: #BDBDBD;
+  text-decoration: none;
+}
+
 .footer__form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1704,11 +1742,12 @@ template {
 
 .footer__input {
   width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .footer__input-group {
-  -ms-flex-item-align: start;
-      align-self: flex-start;
   -ms-flex-preferred-size: 48%;
       flex-basis: 48%;
   margin-bottom: 15px;
@@ -1842,6 +1881,12 @@ template {
 
 .modal__input {
   width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.modal__input-group {
   margin-top: 15px;
 }
 
