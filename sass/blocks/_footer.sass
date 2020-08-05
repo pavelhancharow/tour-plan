@@ -11,7 +11,7 @@
   &-logo
     width: 166px
     grid-row: 1 / 3
-    align-self: stretch
+    align-self: center
   &__categories
     grid-row: 1 / 4
   &__social
@@ -43,6 +43,9 @@
     line-height: 160%
     color: $grey
     text-decoration: none
+    transition: color 0.3s
+    &:hover
+      color: $light
   &__legal
     justify-self: end
   &__contact

@@ -1567,9 +1567,9 @@ template {
   -ms-grid-row: 1;
   -ms-grid-row-span: 2;
   grid-row: 1 / 3;
-  -ms-flex-item-align: stretch;
-      -ms-grid-row-align: stretch;
-      align-self: stretch;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .footer__categories {
@@ -1630,6 +1630,12 @@ template {
   line-height: 160%;
   color: #BDBDBD;
   text-decoration: none;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+.footer__link:hover {
+  color: #ffffff;
 }
 
 .footer__legal {
