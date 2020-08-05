@@ -1086,7 +1086,7 @@ template {
 }
 
 .trip-card__title {
-  margin-bottom: 23px;
+  margin-bottom: 25px;
   font-weight: 700;
   font-size: 18px;
 }
@@ -1868,10 +1868,10 @@ template {
     row-gap: 15px;
   }
   .trip-card__image {
-    height: 225px;
+    max-height: 225px;
   }
   .trip-card__image-active {
-    height: 100%;
+    max-height: 100%;
   }
   .trip-card__active {
     -ms-grid-rows: (450px)[2];
@@ -1882,7 +1882,7 @@ template {
     padding-bottom: 20px;
   }
   .trip-card__title {
-    margin-bottom: 18px;
+    margin-bottom: 20px;
   }
   .trip-card__about {
     margin-bottom: 24px;
@@ -1982,8 +1982,14 @@ template {
     padding-bottom: 60px;
   }
   .packages-wrapper {
-    -ms-grid-columns: (340px)[auto-fit];
-        grid-template-columns: repeat(auto-fit, 340px);
+    -ms-grid-columns: (48%)[auto-fit];
+        grid-template-columns: repeat(auto-fit, 48%);
+    -ms-grid-rows: (465px)[2];
+        grid-template-rows: repeat(2, 465px);
+  }
+  .trip-card__active {
+    -ms-grid-rows: (465px)[2];
+        grid-template-rows: repeat(2, 465px);
   }
   .trip-card__about {
     margin-bottom: 31px;

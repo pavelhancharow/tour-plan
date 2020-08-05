@@ -17,9 +17,9 @@
       row-gap: 15px
   .trip-card
     &__image
-      height: 225px
+      max-height: 225px
       &-active
-        height: 100%
+        max-height: 100%
     &__active
       grid-template-rows: repeat(2, 450px)
     &__block,
@@ -27,7 +27,7 @@
       padding-top: 20px
       padding-bottom: 20px
     &__title
-      margin-bottom: 18px
+      margin-bottom: 20px
     &__about
       margin-bottom: 24px
     &__room
@@ -96,8 +96,11 @@
   .packages
     padding-bottom: 60px
     &-wrapper
-      grid-template-columns: repeat(auto-fit, 340px)
+      grid-template-columns: repeat(auto-fit, 48%)
+      grid-template-rows: repeat(2, 465px)
   .trip-card
+    &__active
+      grid-template-rows: repeat(2, 465px)
     &__about
       margin-bottom: 31px
     &__room
