@@ -116,9 +116,9 @@ $(document).ready(function () {
   // анимация при scroll
   AOS.init();
 
-  // $(function () {
-  //   $(".lazy").lazy();
-  // });
+  $(function () {
+    $(".lazy").lazy();
+  });
 
   $(".map").mousemove(function (event) {
     $(".map__google").append('<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25228.630595201408!2d-122.43470986132685!3d37.77647271983485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb10ed6d9b5050fa5!2sTwitter!5e0!3m2!1sru!2sby!4v1596692683745!5m2!1sru!2sby" frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0" class="map__google"></iframe>');
