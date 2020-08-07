@@ -499,12 +499,14 @@
     &__dialog
       padding: 33px 46px
 @media (max-width: 425px)
+  body
+    padding-top: 71px
   .container
     max-width: 87%
   .navbar
     &-top
-      padding-top: 24px
-      padding-bottom: 28px
+      padding-top: 18px
+      padding-bottom: 22px
     &-bottom
       top: 71px
     &__search
@@ -528,24 +530,27 @@
         &-next
           right: 6px
   .newsletter
+    padding-bottom: 80px
     &-wrapper
       max-width: 87%
     &-title
       font-size: 20px
-      line-height: 25px
+      line-height: 32px
       &__strong
         font-size: 30px
         line-height: 38px
   .subscribe
     width: 100%
     &__input
+      padding-left: 16px
       &-group
         width: 100%
   .reviews
-    padding-bottom: 34px
+    padding-bottom: 37px
     &__title
       font-size: 18px
       line-height: 23px
+      margin-bottom: 44px
     &-slider
       &__button-prev
         left: 40%
@@ -561,9 +566,16 @@
       line-height: 23px
   .footer
     &-wrapper
-      grid-row-gap: 32px
+      grid-row-gap: 33px
+    &-logo
+      width: 94px
     &__title
       margin-bottom: 15px
+      &-inline
+        margin-top: 8px
+      &-mb2
+        margin-top: -11px
+        margin-bottom: 26px
       &-mb3
         margin-top: 14px
     &__subtitle
@@ -579,6 +591,9 @@
         margin-bottom: 15px
     &__textarea
       margin-bottom: 15px
+    &__payment
+      &-ul
+        margin-bottom: 4px
   .modal
     &__dialog
       padding: 33px 36px
